@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --main-color: #E8B86D;
+     --black: #13131a;
+     --bg: #010103;
+     --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+body{
+    background: #010103;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform:uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;   
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform:uppercase;
+    justify-content: center;
+}
+
+    .menu-container {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-around; 
+       }
+
+      
+      .menu-item {
+        width: 50%; 
+        margin-bottom: 10px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 150px;
+        border-radius: 10px;
+
+      }
+      
+      .menu-item img {
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 5px;
+      }
+      
+      .menu-item h3 {
+        margin-top: 0;
+        color: var(--main-color);
+      }
+
+      span{
+        color: var(--main-color);
+      }
+
+      
+      .menu-item p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: var(--main-color);
+      }
+      
+      .menu-item span {
+        font-weight: bold;
+        float: right;
+      }
+      
+      /* Estilos para pantallas pequeñas */
+      @media (max-width: 768px) {
+        .menu-item {
+          width: 90%; /* Ocupa casi todo el ancho en pantallas pequeñas */
+          margin: 10px auto; /* Centra el elemento */
+        }
+      }
