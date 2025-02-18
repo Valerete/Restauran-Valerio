@@ -110,8 +110,14 @@ letter-spacing: .2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    top: 100%; right: -100%;
+    width: 30rem;
+    height: calc(100vh -9.5rem);
 }
 
+.header .navbar.active{
+    right:0;
+}
 .header .navbar a{
 margin: 0 1rem;
 font-size: 1.6rem;
