@@ -110,7 +110,7 @@ body{
 }
 
 .heading span{
-    color: var(--main-color);
+    color: #e8b86d;
     text-transform:uppercase;
     justify-content: center;
     margin-top: 200px;

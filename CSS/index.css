@@ -253,6 +253,8 @@ color: var(--main-color);
 }
 .Inicio .content{
  max-width: 60rem;
+ display: flex;
+ flex-wrap: wrap;
  
 }
 .Inicio .content h3{
@@ -283,6 +285,8 @@ color: var(--main-color);
     -webkit-animation: spin 2.8s linear infinite;
     -moz-animation: spin;
     animation: spin 2.8s linear infinite;
+    width:  60vmin;
+    height: 60vmin;
     
 }
 
@@ -310,8 +314,12 @@ color: var(--main-color);
         border: var(--border);
         border-radius: 20px;
         border: 2px solid  #e8b86d;
+    }
 
-      }
+    .Nosotros .box-container .box:hover{
+        transform: scale(1.1);
+        z-index: 2;
+    }
 
       .Nosotros .box h2{
         color: #fff;
@@ -342,6 +350,11 @@ color: var(--main-color);
         border-radius: 20px;
         border: 2px solid  #e8b86d;
       }
+       
+      .Menú .box-container .box:hover{
+      transform: scale(1.1);
+      z-index: 2;
+    }
 
       .Menú .box-container .box img{
         height: 10rem;
@@ -378,6 +391,12 @@ color: var(--main-color);
         border: 2px solid  #e8b86d;
         padding: 2rem;
     }
+
+    .Productos .box-container .box:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+
 
     .Productos .box-container .box img{
         border-radius: 20px;
@@ -443,6 +462,12 @@ color: var(--main-color);
      border: solid #e8b86d;
      border-radius: 8px;
      }
+      
+     .Reseñas .box-container .box:hover{
+        transform: scale(1.1);
+        z-index: 2;
+     }
+     
 
      .Reseñas .box-container .box p{
         padding: 1.5rem;
@@ -607,6 +632,7 @@ color: var(--main-color);
         padding: 2rem;
     }
 
+    
 }
 
 @media (max-width:768px){
@@ -622,18 +648,18 @@ color: var(--main-color);
         width: 30rem;
         height: calc(100vh - 9.5rem);
     }
+
     .header .navbar.active{
         right: 0;
-
     }
+  
 
     .header .navbar a{
         color: var(--black);
         display: block;
         margin: 1.5rem;
-        padding: .5rem;
-        font-size: 2rem;
-        
+        padding:.5rem;
+        font-size: 2rem;  
     }
 
     .header .search-form{
@@ -653,6 +679,11 @@ color: var(--main-color);
     .Inicio .content p{ 
         font-size: 1.5rem;
        }
+
+       
+
+   
+ 
     
 
     
