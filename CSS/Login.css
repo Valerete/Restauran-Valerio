@@ -10,97 +10,9 @@ body{
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+    background-image:url(../IMG/Fondo.png) ;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-    height: 80px;
-
-    display: block;
-    list-style-type: disc;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-
-header .navigation ul{
-    float: right;
-    margin-right: 20px;
-   }
-   
-   header .navigation ul li{
-       display: inline-block;
-       line-height: 50px;
-       margin: 0 5px;
-   }
-
-header .navigation ul li a {
- position: relative;
-font-size: 1.1em;
-color: #fff;
-text-decoration: none;
-font-weight: 500;
-margin-left: 40px;
-padding: 7px 13px;
-border-radius: 3px;
-text-transform: uppercase;
-}
-
-header .navigation ul li a::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    border-radius: 5px;
-    transform-origin: 50% 50%;
-    transform: scaleX(0);
-    transition: transform .5s;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    background: linear-gradient(to right, #fff, #f3f3f3);
-}
-
-header .navigation ul li a:hover::after{
-    transform-origin: right;
-    transform: scaleX(1);
-}
-
-header .navigation ul li .btnLogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #e8b86d;;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 1000px;
-    
-}
-
-header.navigation ul li .btnLogin-popup:hover{
-    background-color: #05190A;
-    color: #fff;
-}
-
-ul li a.active, ul li a:hover{
-    background: #05190A;
-    transition: .5s;
-}
 
 .check_btn{
     font-size: 25px;
@@ -230,7 +142,7 @@ header .navigation ul li a{
     right: 5px;
     width: 45px;
     height: 45px;
-    background: #05190A;
+    background: #e8b86d;
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -242,7 +154,7 @@ header .navigation ul li a{
 
 .form-box h2{
     font-size: 2em;
-    color: #05190A;
+    color: #e8b86d;
     text-align: center;
 }
 
@@ -260,7 +172,7 @@ header .navigation ul li a{
     left: 10px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #05190A;
+    color: #e8b86d;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -276,11 +188,11 @@ header .navigation ul li a{
     width: 100%;
     height: 100%;
     background: transparent;
-    border: 1px solid #05190A;
+    border: 1.5px solid #e8b86d;
     border-radius: 10px;
     outline: none;
     font-size: 1em;
-    color: #05190A;
+    color: #e8b86d;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -289,13 +201,13 @@ header .navigation ul li a{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #05190A;
+    color: #e8b86d;
     line-height: 57px;
 }
 
 .remenber-forgot{
     font-size: .9em;
-    color: #05190A;
+    color: #e8b86d;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -303,12 +215,12 @@ header .navigation ul li a{
 }
 
 .remenber-forgot label input{
-    accent-color: #05190A;
+    accent-color: #e8b86d;
     margin-right: 3px;
 }
 
 .remenber-forgot a{
-    color: #05190A;
+    color: #e8b86d;
     text-decoration: underline;
 }
 
@@ -319,7 +231,7 @@ header .navigation ul li a{
 .btn{
     width: 100%;
     height: 45px;
-    background-color: #05190A;
+    background-color: #e8b86d;
     border: none;
     outline: none;
     border-radius: 100px;
@@ -329,12 +241,16 @@ header .navigation ul li a{
     font-weight: 500;
 }
 
-.login-register{
+.form-boxregisterhidden{
     font-size: .9em;
     color: #9a9a9a;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
+}
+
+.hidden {
+    display: none;
 }
 
 .login-register p a{
@@ -347,3 +263,6 @@ header .navigation ul li a{
     text-decoration: underline;
 }
 
+.hidden {
+    display: none;
+}

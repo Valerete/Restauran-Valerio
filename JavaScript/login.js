@@ -1,27 +1,21 @@
-const btnpopup = document.querySelector('.btnLogin-popup');
-const cover_box = document.querySelector('.cover-box');
+const cover_box = document.querySelector('.cover_box'); // Asegúrate de que el selector sea correcto
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
 const iconClose = document.querySelector('.icon-close');
 
-function activateCoverBox(){
-    cover_box.classList.add('active');
-}
+// Función para mostrar el formulario de registro
+registerLink.addEventListener('click', function() {
+    document.querySelector('.login').classList.add('hidden'); // Oculta el formulario de login
+    document.querySelector('.register').classList.remove('hidden'); // Muestra el formulario de registro
+});
 
-function deactivateCoverBox(){
-    cover_box.classList.remove('active');
-}
+// Función para mostrar el formulario de login
+loginLink.addEventListener('click', function() {
+    document.querySelector('.register').classList.add('hidden'); // Oculta el formulario de registro
+    document.querySelector('.login').classList.remove('hidden'); // Muestra el formulario de login
+});
 
-
-function activatepopup(){
-    cover_box.classList.add('active-popup');
-}
-
-function deactivateCoverpopup(){
-    cover_box.classList.remove('active-popup');
-}
-
-registerLink.addEventListener('click', activateCoverBox);
-loginLink.addEventListener('click', deactivateCoverBox);
-btnpopup.addEventListener('click', activatepopup);
-iconClose.addEventListener('click', deactivateCoverpopup);
+// Cierra el contenedor
+iconClose.addEventListener('click', function() {
+    cover_box.classList.remove('active'); // Desactiva el contenedor
+});
