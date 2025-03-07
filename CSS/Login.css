@@ -221,7 +221,7 @@ header .navigation ul li a{
 
 .remenber-forgot a{
     color: #e8b86d;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .remenber-forgot a:hover{

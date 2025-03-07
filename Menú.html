@@ -4,10 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú</title>
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
     <link rel="stylesheet" href="CSS/Menú.css">
 </head>
 <body>
 
+   <!--header sections starts-->
+
+   <header class="header">
+
+    <a href="#" class="logo">
+    <img src="IMG/Logo.png" alt="">
+   </a>
+  
+   <nav class="navbar">
+   <a href="index.html#Inicio">Inicio</a>
+   <a href="index.html#Nosotros">Nosotros</a>
+   <a href="index.html#Menú">Menú</a>
+   <a href="index.html#Productos">Productos</a>
+   <a href="index.html#Reseñas">Reseñas</a>
+   <a href="index.html#Contactos">Contactos</a>
+   <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
+  
+   </nav>
+
+<div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="Menú-btn"></div>
+</div>
+  
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
+  </div>
+  
+  <div class="cart-items-container">
+    <div class="cart-item">
+       <span class="fas fa-times"></span>
+       <img src="IMG/cafe 1.jpg" alt="">
+       <div class="content">
+        <h3>Café Clásico</h3>
+        <div class="price">$200</div>
+       </div>
+    </div>
+    <div class="cart-item">
+      <span class="fas fa-times"></span>
+      <img src="IMG/cafe 2.jpg" alt="">
+      <div class="content">
+       <h3>Café Premium</h3>
+       <div class="price">$300</div>
+      </div>
+   </div>
+   <div class="cart-item">
+    <span class="fas fa-times"></span>
+    <img src="IMG/cafe 3.jpg" alt="">
+    <div class="content">
+     <h3>Café Tostado</h3>
+     <div class="price">$250</div>
+    </div>
+ </div>
+   <a href="#" class="btn">checkout now</a>
+  </div>
+
+    </header>
+
+     <!--header sections ends-->
+  
   <h1 class="heading" id="desayunos">Nuestros  <span>Desayunos</span></h1>
 
   <div class="menu-container">
@@ -18,7 +82,7 @@
         </div>
         <div class="face back">
           <h3>Waffles de Verano</h3>
-          <p>
+          <p class="parrafo">
             Un delicioso waffle dorado, esponjoso y crujiente, 
             adornado con fresas y arándanos frescos. Perfecto para disfrutar en un desayuno soleado o como 
             un capricho dulce en cualquier momento del día.
@@ -34,7 +98,7 @@
         </div>
         <div class="face back">
           <h3>Desayuno Campestre</h3>
-          <p>Un nutritivo platillo que combina huevos fritos, rodajas de salami, rodajas de aguacate, y queso frito, todo acompañado de cebolla morada encurtida. Ideal para comenzar el día con energía y sabor.</p>
+          <p class="parrafo">Un nutritivo platillo que combina huevos fritos, rodajas de salami, rodajas de aguacate, y queso frito, todo acompañado de cebolla morada encurtida. Ideal para comenzar el día con energía y sabor.</p>
          
         </div>
       </div>
@@ -45,8 +109,8 @@
           <h3>Desayuno Continental</h3>
         </div>
         <div class="face back">
-          <h3>Wafles</h3>
-          <p>Desayuno Continental
+          <h3>Desayuno Continental</h3>
+          <p class="parrafo">Desayuno Continental
             Una selección variada que incluye croissants, jugo de naranja fresco y frutas. Perfecto para un desayuno ligero y lleno de energía.</p>
          
         </div>
@@ -59,7 +123,7 @@
         </div>
         <div class="face back">
           <h3>Desayuno Completo</h3>
-          <p>Desayuno Completo
+          <p class="parrafo">Desayuno Completo
             Un abundante plato que incluye waffles esponjosos, bacon crujiente,
              huevos fritos y pan tostado.
             Ideal para comenzar el día con energía y satisfacción.</p>
@@ -74,7 +138,7 @@
         </div>
         <div class="face back">
           <h3>Bowl de Frutas Frescas</h3>
-          <p>Una colorida mezcla de frutas como fresas, arándanos, kiwi y melón,
+          <p class="parrafo">Una colorida mezcla de frutas como fresas, arándanos, kiwi y melón,
              acompañada de waffles. 
             Perfecto para quienes buscan un desayuno ligero y refrescante.</p>
          
@@ -88,7 +152,7 @@
         </div>
         <div class="face back">
           <h3>Sándwiches Saludables</h3>
-          <p>Sándwiches grillados rellenos de verduras frescas y proteínas,
+          <p class="parrafo">Sándwiches grillados rellenos de verduras frescas y proteínas,
              acompañados de waffles.
              Una opción equilibrada y sabrosa para un almuerzo o merienda.</p>
         </div>
@@ -105,7 +169,7 @@
         </div>
         <div class="face back">
           <h3>Plato Tradicional</h3>
-          <p> Jugoso pollo marinado, servido sobre una cama de arroz con frijoles y plátanos fritos.
+          <p class="parrafo"> Jugoso pollo marinado, servido sobre una cama de arroz con frijoles y plátanos fritos.
             Un festín de sabores auténticos que celebra la cocina casera.</p>
          
         </div>
@@ -118,7 +182,7 @@
         </div>
         <div class="face back">
           <h3>Costillas a la BBQ</h3>
-          <p>Costillas tiernas glaseadas con salsa barbacoa, acompañadas de maíz y trozos de papa.
+          <p class="parrafo">Costillas tiernas glaseadas con salsa barbacoa, acompañadas de maíz y trozos de papa.
             Ideal para quienes buscan un plato sabroso y reconfortante.</p>
          
         </div>
@@ -131,7 +195,7 @@
         </div>
         <div class="face back">
           <h3>Sopa Reconfortante</h3>
-          <p>Sopa caliente con carne, vegetales frescos y especias, perfecta para disfrutar en un día frío.
+          <p class="parrafo">Sopa caliente con carne, vegetales frescos y especias, perfecta para disfrutar en un día frío.
              Un plato que evoca calidez y bienestar.</p>
          
         </div>
@@ -144,7 +208,7 @@
         </div>
         <div class="face back">
           <h3>Cena Elegante</h3>
-          <p>Un plato gourmet que combina pescado a la parrilla con guarniciones sofisticadas, ideal para una cena especial.
+          <p class="parrafo">Un plato gourmet que combina pescado a la parrilla con guarniciones sofisticadas, ideal para una cena especial.
              Una experiencia culinaria de alta calidad.</p>
          
         </div>
@@ -157,7 +221,7 @@
         </div>
         <div class="face back">
           <h3>Plato Mixto</h3>
-          <p>Una deliciosa selección de carnes asadas, servidas con arroz,
+          <p class="parrafo">Una deliciosa selección de carnes asadas, servidas con arroz,
              frijoles y una salsa rica. Perfecto para compartir y disfrutar de sabores variados.</p>
          
         </div>
@@ -170,7 +234,7 @@
         </div>
         <div class="face back">
           <h3>Salteado Colorido</h3>
-          <p>Un vibrante salteado de fideos con verduras frescas y proteínas, todo sazonado con una deliciosa salsa. 
+          <p class="parrafo">Un vibrante salteado de fideos con verduras frescas y proteínas, todo sazonado con una deliciosa salsa. 
             Ideal para una comida rápida y nutritiva.</p>
         </div>
       </div>
@@ -188,7 +252,7 @@
       </div>
       <div class="face back">
         <h3>Cóctel Frutal</h3>
-        <p>Una refrescante mezcla de frutas como mora y piña, combinada con un toque de licor.
+        <p class="parrafo">Una refrescante mezcla de frutas como mora y piña, combinada con un toque de licor.
            Perfecto para disfrutar en una tarde soleada.</p>
   
       </div>
@@ -201,7 +265,7 @@
       </div>
       <div class="face back">
         <h3>Piña Colada Clásica</h3>
-        <p>Piña Colada Clásica
+        <p class="parrafo"> Piña Colada Clásica
           Un delicioso y cremoso cóctel tropical elaborado con crema de coco y piña,
            ideal para transportarte a la playa con cada sorbo.</p>
        
@@ -215,7 +279,7 @@
       </div>
       <div class="face back">
         <h3>Cerveza Artesanal</h3>
-        <p>Una cerveza espumosa y dorada, elaborada con ingredientes de calidad.
+        <p class="parrafo">Una cerveza espumosa y dorada, elaborada con ingredientes de calidad.
            Perfecta para acompañar comidas o disfrutar en una reunión con amigos.</p>
        
       </div>
@@ -228,7 +292,7 @@
       </div>
       <div class="face back">
         <h3>Mojito Refrescante</h3>
-        <p>Un cóctel ligero y burbujeante de ron, menta fresca y limón, ideal para refrescarte en días calurosos.</p>
+        <p class="parrafo">Un cóctel ligero y burbujeante de ron, menta fresca y limón, ideal para refrescarte en días calurosos.</p>
        
       </div>
     </div>
@@ -240,7 +304,7 @@
       </div>
       <div class="face back">
         <h3>Limonada Tropical</h3>
-        <p>Una bebida vibrante que combina limones frescos y frutas de verano, servida fría.
+        <p class="parrafo">Una bebida vibrante que combina limones frescos y frutas de verano, servida fría.
            Perfecta para hidratarte y disfrutar de su sabor dulce y ácido.</p>
        
       </div>
@@ -253,12 +317,44 @@
       </div>
       <div class="face back">
         <h3>Sorbete de Frutas</h3>
-        <p>Una mezcla de frutas congeladas y refrescantes, servida en un vaso elegante.
+        <p class="parrafo">Una mezcla de frutas congeladas y refrescantes, servida en un vaso elegante.
            Ideal para un postre ligero o un cóctel con un toque dulce.</p>
       </div>
     </div>
 
   </div>
+  <div id="resultado"></div>
+
+  <!--Footer section stars -->
+
+<section class="Footer">
+  <div class="share">
+    <a href="https://www.facebook.com/restaurantedoradord/" class="fab fa-facebook-f"></a>
+    <a href="https://www.instagram.com/restaurants/" class="fab fa-instagram"></a>
+    <a href="https://www.pinterest.com/pin/537898749255836321/" class="fab fa-pinterest"></a>
+    <a href="https://www.tiktok.com/@marisco.restaurant" class="fab fa-tiktok"></a>
+  </div>
+  <div class="links">
+    <a href="index.html#Inicio">Inicio</a>
+    <a href="index.html#Nosotros">Nosotros</a>
+    <a href="index.html#Menú">Menú</a>
+    <a href="index.html#Productos">Productos</a>
+    <a href="index.html#Reseñas">Reseñas</a>
+    <a href="index.html#Contactos">Contactos</a>
+    <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
+  </div>
+
+  <div class="Credit">Creado  <span>  por   </span>Valery Valerio Henríquez</div>
+</section>
+
+
+<!--Footer section ends -->
+
+
+<!--custom js file link-->
+<script src="JavaScript/index.js"></script>
+<script src="JavaScript/Menú.js"></script>
+
 
   
 
