@@ -547,20 +547,51 @@ color: var(--main-color);
         text-transform: none;
         background: none;
      }
+
+     #confirmation {
+        background-color: #e0f7fa;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+/* Estilo para el título de la confirmación */
+.confirmation-title {
+    font-size: 4em; /* Tamaño de fuente más grande */
+    color: #E8B86D; /* Color azul */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Estilo para los párrafos de la confirmación */
+.confirmation-item {
+    font-size: 1em; /* Tamaño de fuente */
+    color: #333; /* Color gris oscuro */
+    font-weight: bold; /* Texto en negrita */
+    margin: 5px 0; /* Espacio arriba y abajo */
+}
+
+/* Negrita para los valores */
+.confirmation-item strong {
+    font-weight: bold; /* Texto en negrita */
+    color: #000; /* Color negro para los valores */
+}
      
 
      .Footer {
-        background-color: #000000; /* Color de fondo negro */
-        text-align: center; /* Centrar texto */
-        border: 3px solid #E8B86D; /* Borde dorado */
-        border-radius: 10px; /* Bordes redondeados */
-        height: 280px; /* Altura */
-        width: 1200px; /* Ancho */
-        margin: 0 auto; /* Centrar el footer */
-        display: flex; /* Usar flexbox para centrar el contenido */
-        flex-direction: column; /* Orientar el contenido en columna */
-        justify-content: center; /* Centrar verticalmente el contenido */
-        align-items: center; /* Centrar horizontalmente el contenido */
+        background-color: #000000; 
+        text-align: center; 
+        border: 3px solid #E8B86D; 
+        border-radius: 10px; 
+        height: 280px; 
+        width: 1200px; 
+        margin: 0 auto;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 auto; 
+        margin-bottom: 20px; 
     }
     
      .Footer .share{

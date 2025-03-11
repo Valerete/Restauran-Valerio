@@ -354,9 +354,13 @@ color: var(--main-color);
     text-align: center;
     border: 3px solid #E8B86D;
     border-radius: 10px;
-    height: 280px;
-    width: 1330px;
+    height: 250px;
+    width: 1280px;
+    margin: 0 auto; /* Centrar el footer */
+    margin-bottom: 20px; 
 }
+
+
 
  .Footer .share{
     padding: 1rem 0;
