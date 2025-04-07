@@ -6,6 +6,10 @@
     <title>Restaurante Valerio</title>
      <!--font awesome cdn link-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+     <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
      <!--custom css file link-->
      <link rel="stylesheet" href="CSS/index.css">
 </head>
@@ -41,33 +45,69 @@
     <input type="search" id="search-box" placeholder="search here...">
     <label for="search-box" class="fas fa-search"></label>
   </div>
-  
-  <div class="cart-items-container">
+ 
+  <div class="cart-items-container" id="cart-items-container">
+    
+    <h2 class="cart-title">Tú carrito</h2>
+    <div class="cart-content">
     <div class="cart-item">
        <span class="fas fa-times"></span>
        <img src="IMG/cafe 1.jpg" alt="">
        <div class="content">
-        <h3>Café Clásico</h3>
-        <div class="price">$200</div>
+        <h3 class="product-title">Café Clásico</h3>
+        <span class="price">$200</span>
+        <div class="cart-quantity">
+          <button id="decrement">-</button>
+          <span class="number">1</span>
+          <button id="increment">+</button>
+        </div>
        </div>
+       <i class="ri-delete-bin-line cart-remove"></i>
     </div>
+    
+
+ 
     <div class="cart-item">
       <span class="fas fa-times"></span>
       <img src="IMG/cafe 2.jpg" alt="">
       <div class="content">
-       <h3>Café Premium</h3>
+       <h3 class="product-title">Café Premium</h3>
        <div class="price">$300</div>
+       <div class="cart-quantity">
+        <button id="decrement">-</button>
+        <span class="number">1</span>
+        <button id="increment">+</button>
+      </div>
       </div>
    </div>
    <div class="cart-item">
     <span class="fas fa-times"></span>
     <img src="IMG/cafe 3.jpg" alt="">
     <div class="content">
-     <h3>Café Tostado</h3>
+     <h3 class="product-title">Café Tostado</h3>
      <div class="price">$250</div>
+     <div class="cart-quantity">
+      <button id="decrement">-</button>
+      <span class="number">1</span>
+      <button id="increment">+</button>
     </div>
+          
+    </div>
+    
  </div>
-   <a href="#" class="btn">checkout now</a>
+</div>
+
+ <div class="total">
+ <div class="total-title">Total</div>
+ <div class="total-price">$0</div>
+ <i class="ri-close-line" id="cart-close"></i>
+</div>
+
+<a href="#" class="btn">Comprar ahora</a>
+
+
+</div>
+   
   </div>
 
     </header>
@@ -176,7 +216,7 @@
           <img src="IMG/cafe 1.jpg" alt="">
         </div>
         <div class="content">
-          <h3>Café Clásico</h3>
+          <h3 class="product-title">Café Clásico</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -199,7 +239,7 @@
           <img src="IMG/cafe 2.jpg" alt="">
         </div>
         <div class="content">
-          <h3>Café Premium</h3>
+          <h3 class="product-title" >Café Premium</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -214,7 +254,7 @@
       
       <div class="box">
         <div class="icons">
-          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-shopping-cart">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
         </div>
@@ -222,7 +262,7 @@
           <img src="IMG/cafe 3.jpg" alt="">
         </div>
         <div class="content">
-          <h3>Café Tostado</h3>
+          <h3 class="product-title">Café Tostado</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -305,33 +345,32 @@
   <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60253.398389941445!2d-70.33498357832032!3d19.289436000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eae2d95de9f2c19%3A0x8a79c2c98af12b2b!2sMaikito&#39;s%20By%20De%20Moya!5e0!3m2!1ses-419!2sdo!4v1737586298177!5m2!1ses-419!2sdo" allowfullscreen="" loading="lazy"></iframe>
 
   <h3>Contáctenos</h3>
-  <form onsubmit="return mostrarReservacion(event)">
+  <form action="https://formsubmit.co/restaurantevalerio3@gmail.com" method="POST">
       <div class="inputBox">
           <span class="fas fa-user"></span>
-          <input type="text" id="name" placeholder="name" required>
+          <input type="text" id="name" name="name" placeholder="name" required>
       </div>
 
       <div class="inputBox">
           <span class="fas fa-envelope"></span>
-          <input type="email" id="email" placeholder="email" required>
+          <input type="email" id="email" name="email" placeholder="email" required>
       </div>
 
       <div class="inputBox">
           <span class="fas fa-phone"></span>
-          <input type="number" id="number" placeholder="number" required>
+          <input type="number" id="number" name="phone" placeholder="number" required>
       </div>
 
       <div class="inputBox">
-          <span class="fas fa-calendar"></span>
-          <label for="date">Selecciona una fecha:</label>
-          <input type="date" id="date" name="date" required>
+        <span class="fas fa-calendar"></span>
+        <label for="fecha">Seleccione una fecha:</label>
+        <input type="date" id="fecha" name="fecha">
       </div>
-
       <input type="submit" value="Contactános" class="btn">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Contactos">
+      <input type="hidden" name="_captcha" value="false">
   </form>
 </div>
-
-<div id="confirmation" style="display: none; margin-top: 20px;"></div>
 </section>
 <!--Contactos section ends -->
 
@@ -339,10 +378,10 @@
 
 <section class="Footer">
   <div class="share">
-    <a href="https://www.facebook.com/restaurantedoradord/" class="fab fa-facebook-f"></a>
-    <a href="https://www.instagram.com/restaurants/" class="fab fa-instagram"></a>
-    <a href="https://www.pinterest.com/pin/537898749255836321/" class="fab fa-pinterest"></a>
-    <a href="https://www.tiktok.com/@marisco.restaurant" class="fab fa-tiktok"></a>
+    <a href="https://www.facebook.com/restaurantedoradord/" target="_blank" class="fab fa-facebook-f"></a>
+    <a href="https://www.instagram.com/restaurants/" target="_blank" class="fab fa-instagram"></a>
+    <a href="https://www.pinterest.com/pin/537898749255836321/" target="_blank" class="fab fa-pinterest"></a>
+    <a href="https://www.tiktok.com/@marisco.restaurant" target="_blank" class="fab fa-tiktok"></a>
   </div>
   <div class="links">
     <a href="#Inicio">Inicio</a>

@@ -233,7 +233,7 @@ color: var(--main-color);
 }
 
 .header .cart-items-container .cart-item .content .price{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--main-color); 
 }
 
@@ -242,6 +242,61 @@ color: var(--main-color);
     text-align: center;
 
 }
+
+.cart-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+.cart-quantity{
+    display: flex;
+     width:100px;
+     border: 1px solid #999;
+     border-radius: 6px;
+}
+
+.cart-quantity button{
+    background: transparent;
+    width: 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.cart-quantity #decrement{
+    color: #999;
+    }
+
+    .cart-quantity .number{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        border-left: 1px solid #999;
+        border-right: 1px solid #999;
+        cursor: default; 
+    }
+
+    .total{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: 2px solid #333;
+        font-size: 18px;
+        padding-top: 40px;
+    }
+
+    .total-price{
+        margin-left: 10px;
+        font-weight: 600;
+    }
+    
+   #cart-close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+   }
 
 .Inicio{
     min-height: 100vh;
@@ -300,7 +355,7 @@ color: var(--main-color);
     100%{-webkit-transform: rotate(360deg)}
 }  
 
-    .Nosotros .box-container{
+    .Nosotros .box-container{  
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
      gap:1.5rem;
@@ -548,12 +603,21 @@ color: var(--main-color);
         background: none;
      }
 
+
+
+     /* Estilo para el calendario (esto puede no funcionar en todos los navegadores) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background-color: #E8B86D; /* Color del ícono del calendario */
+    border-radius: 50%; /* Esquinas redondeadas */
+}
+ 
      #confirmation {
-        background-color: #e0f7fa;
+        background-color: #010103;
         padding: 15px;
         border-radius: 5px;
         margin-top: 20px;
         text-align: center;
+        border: 3px solid #E8B86D;
     }
 
 /* Estilo para el título de la confirmación */
@@ -561,20 +625,25 @@ color: var(--main-color);
     font-size: 4em; /* Tamaño de fuente más grande */
     color: #E8B86D; /* Color azul */
     margin-bottom: 10px; /* Espacio debajo del título */
+    text-align: center;
 }
 
 /* Estilo para los párrafos de la confirmación */
 .confirmation-item {
     font-size: 1em; /* Tamaño de fuente */
-    color: #333; /* Color gris oscuro */
+    color: #E8B86D; /* Color gris oscuro */
     font-weight: bold; /* Texto en negrita */
     margin: 5px 0; /* Espacio arriba y abajo */
+    font-size: 30px;
+    text-align: center;
 }
 
 /* Negrita para los valores */
 .confirmation-item strong {
     font-weight: bold; /* Texto en negrita */
-    color: #000; /* Color negro para los valores */
+    color: #fff; /* Color negro para los valores */
+    font-size: 20px;
+    text-align: center;
 }
      
 
@@ -584,7 +653,7 @@ color: var(--main-color);
         border: 3px solid #E8B86D; 
         border-radius: 10px; 
         height: 280px; 
-        width: 1200px; 
+        width: 86%; 
         margin: 0 auto;
         display: flex; 
         flex-direction: column;
@@ -717,7 +786,16 @@ color: var(--main-color);
     text-decoration: none;  /* Sin subrayado */
     transition: color 0.3s;  /* Efecto de transición al pasar el mouse */
 }
+
     }
+
+
+    @media (max-width:992px){
+        .Footer{
+            width: 95%;
+        }
+    }
+
     
     .header .navbar a:hover{
         color: #e8b86d;  /* Cambia el color al pasar el mouse */
@@ -752,7 +830,6 @@ color: var(--main-color);
     .Inicio .content p{ 
         font-size: 1.5rem;
        }
-
        
 
    
