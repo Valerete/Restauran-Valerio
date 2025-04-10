@@ -265,7 +265,11 @@ color: var(--main-color);
 .cart-quantity #decrement{
     color: #999;
     }
+  
 
+    .cart-quantity #decrement:hover{
+        background-color: var(--main-color);
+    }
     .cart-quantity .number{
         display: flex;
         justify-content: center;
@@ -603,49 +607,10 @@ color: var(--main-color);
         background: none;
      }
 
+     .date-input {
+        background-color: #e8b86d; 
+         }
 
-
-     /* Estilo para el calendario (esto puede no funcionar en todos los navegadores) */
-input[type="date"]::-webkit-calendar-picker-indicator {
-    background-color: #E8B86D; /* Color del ícono del calendario */
-    border-radius: 50%; /* Esquinas redondeadas */
-}
- 
-     #confirmation {
-        background-color: #010103;
-        padding: 15px;
-        border-radius: 5px;
-        margin-top: 20px;
-        text-align: center;
-        border: 3px solid #E8B86D;
-    }
-
-/* Estilo para el título de la confirmación */
-.confirmation-title {
-    font-size: 4em; /* Tamaño de fuente más grande */
-    color: #E8B86D; /* Color azul */
-    margin-bottom: 10px; /* Espacio debajo del título */
-    text-align: center;
-}
-
-/* Estilo para los párrafos de la confirmación */
-.confirmation-item {
-    font-size: 1em; /* Tamaño de fuente */
-    color: #E8B86D; /* Color gris oscuro */
-    font-weight: bold; /* Texto en negrita */
-    margin: 5px 0; /* Espacio arriba y abajo */
-    font-size: 30px;
-    text-align: center;
-}
-
-/* Negrita para los valores */
-.confirmation-item strong {
-    font-weight: bold; /* Texto en negrita */
-    color: #fff; /* Color negro para los valores */
-    font-size: 20px;
-    text-align: center;
-}
-     
 
      .Footer {
         background-color: #000000; 

@@ -47,68 +47,59 @@
   </div>
  
   <div class="cart-items-container" id="cart-items-container">
-    
-    <h2 class="cart-title">Tú carrito</h2>
+    <h2 class="cart-title">Tu carrito</h2>
     <div class="cart-content">
-    <div class="cart-item">
-       <span class="fas fa-times"></span>
-       <img src="IMG/cafe 1.jpg" alt="">
-       <div class="content">
-        <h3 class="product-title">Café Clásico</h3>
-        <span class="price">$200</span>
-        <div class="cart-quantity">
-          <button id="decrement">-</button>
-          <span class="number">1</span>
-          <button id="increment">+</button>
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 1.jpg" alt="Café Clásico">
+            <div class="content">
+                <h3 class="product-title">Café Clásico</h3>
+                <span class="price">$200</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
         </div>
-       </div>
-       <i class="ri-delete-bin-line cart-remove"></i>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 2.jpg" alt="Café Premium">
+            <div class="content">
+                <h3 class="product-title">Café Premium</h3>
+                <span class="price">$300</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 3.jpg" alt="Café Tostado">
+            <div class="content">
+                <h3 class="product-title">Café Tostado</h3>
+                <span class="price">$250</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+        <i class="ri-close-line" id="cart-close"></i>
     </div>
-    
 
- 
-    <div class="cart-item">
-      <span class="fas fa-times"></span>
-      <img src="IMG/cafe 2.jpg" alt="">
-      <div class="content">
-       <h3 class="product-title">Café Premium</h3>
-       <div class="price">$300</div>
-       <div class="cart-quantity">
-        <button id="decrement">-</button>
-        <span class="number">1</span>
-        <button id="increment">+</button>
-      </div>
-      </div>
-   </div>
-   <div class="cart-item">
-    <span class="fas fa-times"></span>
-    <img src="IMG/cafe 3.jpg" alt="">
-    <div class="content">
-     <h3 class="product-title">Café Tostado</h3>
-     <div class="price">$250</div>
-     <div class="cart-quantity">
-      <button id="decrement">-</button>
-      <span class="number">1</span>
-      <button id="increment">+</button>
-    </div>
-          
-    </div>
-    
- </div>
+    <a href="#" class="btn">Comprar ahora</a>
 </div>
-
- <div class="total">
- <div class="total-title">Total</div>
- <div class="total-price">$0</div>
- <i class="ri-close-line" id="cart-close"></i>
-</div>
-
-<a href="#" class="btn">Comprar ahora</a>
-
-
-</div>
-   
-  </div>
 
     </header>
 
@@ -201,79 +192,54 @@
     <!-- Productos section stars-->
 
 
-   <section class="Productos" id="Productos">
-    <h1 class="heading"> Nuestros   <span>Productos</span></h1>
-     <div class="box-container">
-
-
-      <div class="box">
-        <div class="icons">
-          <a href="#" class="fas fa-shopping-cart"></a>
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-        </div>
-        <div class="image">
-          <img src="IMG/cafe 1.jpg" alt="">
-        </div>
-        <div class="content">
-          <h3 class="product-title">Café Clásico</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+    <section class="Productos" id="Productos">
+      <h1 class="heading">Nuestros <span>Productos</span></h1>
+      <div class="box-container">
+          <div class="box">
+              <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart add-cart"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+              </div>
+              <div class="image">
+                  <img src="IMG/cafe 1.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h3 class="product-title">Café Clásico</h3>
+                  <div class="price">$200 <span>$250.00</span></div>
+              </div>
           </div>
-          <div class="price">$200 <span>$250.00</span></div>
-        </div>
+  
+          <div class="box">
+              <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart add-cart"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+              </div>
+              <div class="image">
+                  <img src="IMG/cafe 2.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h3 class="product-title">Café Premium</h3>
+                  <div class="price">$300 <span>$400.99</span></div>
+              </div>
+          </div>
+  
+          <div class="box">
+              <div class="icons">
+                  <a href="#" class="fas fa-shopping-cart add-cart"></a>
+                  <a href="#" class="fas fa-heart"></a>
+                  <a href="#" class="fas fa-eye"></a>
+              </div>
+              <div class="image">
+                  <img src="IMG/cafe 3.jpg" alt="">
+              </div>
+              <div class="content">
+                  <h3 class="product-title">Café Tostado</h3>
+                  <div class="price">$250 <span>$300.59</span></div>
+              </div>
+          </div>
       </div>
-
-      
-      <div class="box">
-        <div class="icons">
-          <a href="#" class="fas fa-shopping-cart"></a>
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-        </div>
-        <div class="image">
-          <img src="IMG/cafe 2.jpg" alt="">
-        </div>
-        <div class="content">
-          <h3 class="product-title" >Café Premium</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <div class="price">$300 <span>$400.99</span></div>
-        </div>
-      </div>
-    
-      
-      <div class="box">
-        <div class="icons">
-          <a href="#" class="fas fa-shopping-cart">
-          <a href="#" class="fas fa-heart"></a>
-          <a href="#" class="fas fa-eye"></a>
-        </div>
-        <div class="image">
-          <img src="IMG/cafe 3.jpg" alt="">
-        </div>
-        <div class="content">
-          <h3 class="product-title">Café Tostado</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
-          </div>
-          <div class="price">$250 <span>$300.59</span></div>
-        </div>
-      </div>  
-     </div>
   </section>
 
    <!-- Productos section ends-->
@@ -364,8 +330,8 @@
       <div class="inputBox">
         <span class="fas fa-calendar"></span>
         <label for="fecha">Seleccione una fecha:</label>
-        <input type="date" id="fecha" name="fecha">
-      </div>
+        <input type="date" id="fecha" name="fecha" class="date-input">
+    </div>
       <input type="submit" value="Contactános" class="btn">
       <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#Contactos">
       <input type="hidden" name="_captcha" value="false">
