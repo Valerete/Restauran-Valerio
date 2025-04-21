@@ -1,91 +1,256 @@
-<HTML DIR=LTR>
+<HTML>
 <HEAD>
-<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=Windows-1252">
+    <meta charset="UTF-8">
 <TITLE>Empleados</TITLE>
+<link rel="stylesheet" href="CSS/style.css">
+ <!--font awesome cdn link-->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+ <link
+href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+rel="stylesheet"/>
 </HEAD>
 <BODY>
-<TABLE DIR=LTR BORDER>
-<CAPTION>Empleados</CAPTION>
+
+     <!--header sections starts-->
+
+   <header class="header">
+
+    <a href="#" class="logo">
+    <img src="IMG/Logo.png" alt="">
+   </a>
+  
+   <nav class="navbar">
+   <a href="index.html#Inicio">Inicio</a>
+   <a href="index.html#Nosotros">Nosotros</a>
+   <a href="index.html#Menú">Menú</a>
+   <a href="index.html#Productos">Productos</a>
+   <a href="index.html#Reseñas">Reseñas</a>
+   <a href="index.html#Contactos">Contactos</a>
+   <a href="Registro.html">Registro</a>
+   <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
+  
+   </nav>
+
+<div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="Menú-btn"></div>
+</div>
+  
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
+  </div>
+  
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
+  </div>
+ 
+  <div class="cart-items-container" id="cart-items-container">
+    <h2 class="cart-title">Tu carrito</h2>
+    <div class="cart-content">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 1.jpg" alt="Café Clásico">
+            <div class="content">
+                <h3 class="product-title">Café Clásico</h3>
+                <span class="price">$200</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 2.jpg" alt="Café Premium">
+            <div class="content">
+                <h3 class="product-title">Café Premium</h3>
+                <span class="price">$300</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 3.jpg" alt="Café Tostado">
+            <div class="content">
+                <h3 class="product-title">Café Tostado</h3>
+                <span class="price">$250</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <a href="#" class="btn">Comprar ahora</a>
+</div>
+
+    </header>
+
+     <!--header sections ends-->
+     <table border="1" bgcolor="#ffffff" cellspacing="0">
+        <caption style="font-family: Calibri; color: #fff; font-size: 30px;"><b>Empleados</b></caption>
+
+<THEAD>
 <TR>
-<TD DIR=LTR ALIGN=RIGHT>1</TD>
-<TD DIR=LTR ALIGN=LEFT>Antonio</TD>
-<TD DIR=LTR ALIGN=LEFT>Henriquez</TD>
-<TD DIR=LTR ALIGN=LEFT>000-000-000</TD>
-<TD DIR=LTR ALIGN=LEFT>3545654</TD>
-<TD DIR=LTR ALIGN=LEFT>La Duarte</TD>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Id</FONT></TH>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Nombre</FONT></TH>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Apellidos</FONT></TH>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>N&uacute;mero_telefon&oacute;</FONT></TH>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Ced&uacute;la</FONT></TH>
+<TH BGCOLOR=#c0c0c0 BORDERCOLOR=#000000 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Dirrecci&oacute;n</FONT></TH>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>2</TD>
-<TD DIR=LTR ALIGN=LEFT>Adrielis</TD>
-<TD DIR=LTR ALIGN=LEFT>Guaba</TD>
-<TD DIR=LTR ALIGN=LEFT>111-111-1111</TD>
-<TD DIR=LTR ALIGN=LEFT>5456645</TD>
-<TD DIR=LTR ALIGN=LEFT>La Luperon</TD>
+</THEAD>
+<TBODY>
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>1</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Antonio</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Henriquez</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>000-000-000</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>3545654</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Duarte</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>3</TD>
-<TD DIR=LTR ALIGN=LEFT>Darielvy</TD>
-<TD DIR=LTR ALIGN=LEFT>Guaba</TD>
-<TD DIR=LTR ALIGN=LEFT>222-222-2222</TD>
-<TD DIR=LTR ALIGN=LEFT>3445566</TD>
-<TD DIR=LTR ALIGN=LEFT>La Bono</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>2</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Adrielis</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Guaba</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>111-111-1111</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>5456645</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Luperon</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>4</TD>
-<TD DIR=LTR ALIGN=LEFT>Isabela</TD>
-<TD DIR=LTR ALIGN=LEFT>Lopez</TD>
-<TD DIR=LTR ALIGN=LEFT>333-333-3333</TD>
-<TD DIR=LTR ALIGN=LEFT>43567546</TD>
-<TD DIR=LTR ALIGN=LEFT>La Castillo</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>3</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Darielvy</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Guaba</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>222-222-2222</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>3445566</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Bono</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>5</TD>
-<TD DIR=LTR ALIGN=LEFT>Valeria</TD>
-<TD DIR=LTR ALIGN=LEFT>Paulino</TD>
-<TD DIR=LTR ALIGN=LEFT>444-444-4444</TD>
-<TD DIR=LTR ALIGN=LEFT>34656756</TD>
-<TD DIR=LTR ALIGN=LEFT>La Sanchez</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>4</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Isabela</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Lopez</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>333-333-3333</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>43567546</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Castillo</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>6</TD>
-<TD DIR=LTR ALIGN=LEFT>Esperanza</TD>
-<TD DIR=LTR ALIGN=LEFT>Valerio</TD>
-<TD DIR=LTR ALIGN=LEFT>555-555-5555</TD>
-<TD DIR=LTR ALIGN=LEFT>435656754</TD>
-<TD DIR=LTR ALIGN=LEFT>La Mella</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>5</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Valeria</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Paulino</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>444-444-4444</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>34656756</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Sanchez</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>7</TD>
-<TD DIR=LTR ALIGN=LEFT>Cristian</TD>
-<TD DIR=LTR ALIGN=LEFT>Valerio</TD>
-<TD DIR=LTR ALIGN=LEFT>666-666-6666</TD>
-<TD DIR=LTR ALIGN=LEFT>456745674</TD>
-<TD DIR=LTR ALIGN=LEFT>La Salcedo</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>6</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Esperanza</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Valerio</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>555-555-5555</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>435656754</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Mella</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>8</TD>
-<TD DIR=LTR ALIGN=LEFT>Frayniel</TD>
-<TD DIR=LTR ALIGN=LEFT>Andujar</TD>
-<TD DIR=LTR ALIGN=LEFT>777-777-7777</TD>
-<TD DIR=LTR ALIGN=LEFT>567867856</TD>
-<TD DIR=LTR ALIGN=LEFT>La Santa_ana</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>7</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Cristian</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Valerio</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>666-666-6666</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>456745674</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Salcedo</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>9</TD>
-<TD DIR=LTR ALIGN=LEFT>Manuel</TD>
-<TD DIR=LTR ALIGN=LEFT>Ventura</TD>
-<TD DIR=LTR ALIGN=LEFT>888-888-8888</TD>
-<TD DIR=LTR ALIGN=LEFT>345678909</TD>
-<TD DIR=LTR ALIGN=LEFT>La Padre Brea</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>8</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Frayniel</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Andujar</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>777-777-7777</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>567867856</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>La Santa_ana</FONT></TD>
+
 </TR>
-<TR>
-<TD DIR=LTR ALIGN=RIGHT>10</TD>
-<TD DIR=LTR ALIGN=LEFT>Emely</TD>
-<TD DIR=LTR ALIGN=LEFT>Vargas</TD>
-<TD DIR=LTR ALIGN=LEFT>999-999-9999</TD>
-<TD DIR=LTR ALIGN=LEFT>345678904</TD>
-<TD DIR=LTR ALIGN=LEFT>San Francisco</TD>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>9</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Manuel</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Ventura</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>888-888-8888</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>345678909</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=v>La Padre Brea</FONT></TD>
+
 </TR>
+
+<TR VALIGN=TOP>
+<TD BORDERCOLOR=#e7e6e6  ALIGN=RIGHT><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>10</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Emely</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>Vargas</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>999-999-9999</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>345678904</FONT></TD>
+<TD BORDERCOLOR=#e7e6e6 ><FONT style=FONT-SIZE:11pt FACE="Calibri" COLOR=#fff>San Francisco</FONT></TD>
+
+</TR>
+</TBODY>
+<TFOOT></TFOOT>
 </TABLE>
+
+<!--Footer section stars -->
+
+<section class="Footer">
+    <div class="share">
+      <a href="https://www.facebook.com/restaurantedoradord/" target="_blank" class="fab fa-facebook-f"></a>
+      <a href="https://www.instagram.com/restaurants/" target="_blank" class="fab fa-instagram"></a>
+      <a href="https://www.pinterest.com/pin/537898749255836321/" target="_blank" class="fab fa-pinterest"></a>
+      <a href="https://www.tiktok.com/@marisco.restaurant" target="_blank" class="fab fa-tiktok"></a>
+    </div>
+    <div class="links">
+      <a href="index.html#Inicio">Inicio</a>
+      <a href="index.html#Nosotros">Nosotros</a>
+      <a href="index.html#Menú">Menú</a>
+      <a href="index.html#Productos">Productos</a>
+      <a href="index.html#Reseñas">Reseñas</a>
+      <a href="index.html#Contactos">Contactos</a>
+      <a href="Registro.html">Registro</a>
+      <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
+    </div>
+  
+    <div class="Credit">Creado  <span>  por   </span>Valery Valerio Henríquez</div>
+  </section>
+  
+  
+  <!--Footer section ends -->
+  
+  
+  <!--custom js file link-->
+  <script src="JavaScript/index.js"></script>
 </BODY>
-</HTML>
+</HTML> 

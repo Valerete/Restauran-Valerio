@@ -1,0 +1,106 @@
+
+
+
+.container-links {
+    display: flex;
+    justify-content: center; /* Centra los enlaces horizontalmente */
+    margin: 190px ; /* Agrega un margen superior e inferior */
+    margin-bottom: 5px;
+}
+
+.container-links a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; /* Color del texto */
+    margin: 0 15px; /* Espaciado entre los enlaces */
+    padding: 15px 20px; /* Espaciado interno en los enlaces */
+    border: 3px solid #E8B86D; /* Borde transparente para mantener el tamaño */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, border-color 0.3s; /* Transición suave */
+    width: 170px;
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.container-links a:hover {
+    background-color: #E8B86D; /* Color de fondo al pasar el ratón */
+    color: black; /* Color del texto al pasar el ratón */
+    border-color: 2px solid #fff; /* Color del borde al pasar el ratón */
+    border:  2px solid;
+}
+
+.Footer{
+    background-color: #000000;
+    text-align: center;
+    border: 3px solid #E8B86D;
+    border-radius: 10px;
+    height: 250px;
+    width: 1280px;
+    margin: 0 auto; /* Centrar el footer */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20 píxeles */
+    margin-top: 130px;
+    } 
+
+
+
+ .Footer .share{
+    padding: 1rem 0;
+ }
+
+ .Footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: 2px solid #E8B86D;
+    margin: .3rem;
+    border-radius: 50%; 
+    box-sizing: 100px;
+    text-decoration: none;
+}
+
+.Footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.Footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+  
+
+}
+
+.Footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: 2px solid #E8B86D;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.Footer .links a:hover{
+    background: var(--main-color);
+}
+
+.Footer .Credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.Footer .Credit span{
+ color: var(--main-color);
+}
+
+
+
+
+
+
+
+

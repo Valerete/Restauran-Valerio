@@ -1,0 +1,9 @@
+body{
+    background: black;
+}
+
+p{
+    color: #e8b86d;
+    position: center;
+    font-size: 100px;
+}

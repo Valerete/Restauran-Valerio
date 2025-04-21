@@ -25,6 +25,7 @@
    <a href="index.html#Productos">Productos</a>
    <a href="index.html#Reseñas">Reseñas</a>
    <a href="index.html#Contactos">Contactos</a>
+   <a href="Registro.html">Registro</a>
    <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
   
    </nav>
@@ -40,33 +41,71 @@
     <label for="search-box" class="fas fa-search"></label>
   </div>
   
-  <div class="cart-items-container">
-    <div class="cart-item">
-       <span class="fas fa-times"></span>
-       <img src="IMG/cafe 1.jpg" alt="">
-       <div class="content">
-        <h3>Café Clásico</h3>
-        <div class="price">$200</div>
-       </div>
-    </div>
-    <div class="cart-item">
-      <span class="fas fa-times"></span>
-      <img src="IMG/cafe 2.jpg" alt="">
-      <div class="content">
-       <h3>Café Premium</h3>
-       <div class="price">$300</div>
-      </div>
-   </div>
-   <div class="cart-item">
-    <span class="fas fa-times"></span>
-    <img src="IMG/cafe 3.jpg" alt="">
-    <div class="content">
-     <h3>Café Tostado</h3>
-     <div class="price">$250</div>
-    </div>
- </div>
-   <a href="#" class="btn">checkout now</a>
+  <div class="icons">
+    <div class="fas fa-search" id="search-btn"></div>
+    <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    <div class="fas fa-bars" id="Menú-btn"></div>
+</div>
+  
+  <div class="search-form">
+    <input type="search" id="search-box" placeholder="search here...">
+    <label for="search-box" class="fas fa-search"></label>
   </div>
+ 
+  <div class="cart-items-container" id="cart-items-container">
+    <h2 class="cart-title">Tu carrito</h2>
+    <div class="cart-content">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 1.jpg" alt="Café Clásico">
+            <div class="content">
+                <h3 class="product-title">Café Clásico</h3>
+                <span class="price">$200</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 2.jpg" alt="Café Premium">
+            <div class="content">
+                <h3 class="product-title">Café Premium</h3>
+                <span class="price">$300</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 3.jpg" alt="Café Tostado">
+            <div class="content">
+                <h3 class="product-title">Café Tostado</h3>
+                <span class="price">$250</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <a href="#" class="btn">Comprar ahora</a>
+</div>
 
     </header>
 
@@ -341,6 +380,7 @@
     <a href="index.html#Productos">Productos</a>
     <a href="index.html#Reseñas">Reseñas</a>
     <a href="index.html#Contactos">Contactos</a>
+    <a href="Registro.html">Registro</a>
     <a href="login.html"><div class="botonlogin">Iniciar Sesión</div></a>
   </div>
 
