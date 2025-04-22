@@ -607,11 +607,11 @@ color: var(--main-color);
         background: none;
      }
 
-     .date-input {
-        background-color: #e8b86d; 
-         }
-
-
+   
+    .date-input::-webkit-calendar-picker-indicator {
+        background-color: #E8B86D;
+    }
+        
      .Footer {
         background-color: #000000; 
         text-align: center; 
