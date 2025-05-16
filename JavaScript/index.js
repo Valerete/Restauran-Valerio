@@ -1,4 +1,8 @@
-let navbar = document.querySelector('.navbar');
+let navbar = document.querySelector('.navbar')
+const CarItems = document.querySelectorAll(".box")
+
+console.log("xxxxs")
+console.log(CarItems)
 
 document.querySelector('#Menú-btn').onclick = () =>{
     navbar.classList.toggle('active');
@@ -104,6 +108,15 @@ const setupQuantityButtons = () => {
         });
     });
 };
+console.log(CarItems)
+
+CarItems.forEach(element => {
+    console.log(element)
+    element.addEventListener("click", ()=> {
+        console.log("aqui")
+        addToCart(element)
+    })
+});
 
 // Llamar a la función para configurar los botones de cantidad
 setupQuantityButtons();
