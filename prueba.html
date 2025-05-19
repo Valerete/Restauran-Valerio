@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <div class="cart-items-container" id="cart-items-container">
+    <h2 class="cart-title">Tu carrito</h2>
+    <div class="cart-content">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 1.jpg" alt="Café Clásico">
+            <div class="content">
+                <h3 class="product-title">Café Clásico</h3>
+                <span class="price">$200</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 2.jpg" alt="Café Premium">
+            <div class="content">
+                <h3 class="product-title">Café Premium</h3>
+                <span class="price">$300</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="IMG/cafe 3.jpg" alt="Café Tostado">
+            <div class="content">
+                <h3 class="product-title">Café Tostado</h3>
+                <span class="price">$250</span>
+                <div class="cart-quantity">
+                    <button class="decrement">-</button>
+                    <span class="number">1</span>
+                    <button class="increment">+</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$750</div> <!-- Actualiza el total aquí -->
+        <i class="ri-close-line" id="cart-close"></i>
+    </div>
+
+    <a href="#" class="btn" id="comprarBtn">Comprar ahora</a>
+</div>
+
+<!-- Ventana Modal -->
+<div id="miModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Confirmación de Compra</h2>
+        <p>Detalles de tu compra:</p>
+        <ul>
+            <li>Café Clásico - $200</li>
+            <li>Café Premium - $300</li>
+            <li>Café Tostado - $250</li>
+        </ul>
+        <p>Total: $750</p>
+        <p>¡Gracias por tu compra!</p>
+    </div>
+</div>
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        padding-top: 60px;
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    var modal = document.getElementById("miModal");
+    var btn = document.getElementById("comprarBtn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function(event) {
+        event.preventDefault(); // Evita la navegación del link
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

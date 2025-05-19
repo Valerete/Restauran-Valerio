@@ -121,3 +121,5 @@ CarItems.forEach(element => {
 // Llamar a la función para configurar los botones de cantidad
 setupQuantityButtons();
 updateTotal(); // Inicializar el total al cargar
+
+
